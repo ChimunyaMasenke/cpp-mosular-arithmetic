@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/nchimunyamasenke/Projects/Calculator/cpp-mosular-arithmetic/Calculator",
+      "program": "/Users/nchimunyamasenke/Projects/Calculator/cpp-mosular-arithmetic/Calculator/build/Debug/outDebug"
+    }
+  ]
+}
