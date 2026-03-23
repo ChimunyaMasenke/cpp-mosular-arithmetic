@@ -24,3 +24,9 @@ int Factorial(int num){
     if(num <= 1) return num;
     return num * Factorial(num - 1);
 }
+
+ //Power function using cmath
+double Power(double base, double exponent){
+    return pow(base, exponent);
+}
+
