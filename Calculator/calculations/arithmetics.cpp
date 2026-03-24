@@ -1,32 +1,36 @@
 #include "calc.h"
 
-double Addition(double num1, double num2) {
-  double sum = num1 + num2;
-  return sum;
-}
+extern "C" {
 
-double Substraction(double num1, double num2) {
-  double difference = num1 - num2;
-  return difference;
-}
+  double Addition(double num1, double num2) {
+    double sum = num1 + num2;
+    return sum;
+  }
 
-double Multiplication(double num1, double num2) {
-  double product = num1 * num2;
-  return product;
-}
+  double Substraction(double num1, double num2) {
+    double difference = num1 - num2;
+    return difference;
+  }
 
-double Division(double num1, double num2) {
-  double quotient = num1 / num2;
-  return quotient;
-}
+  double Multiplication(double num1, double num2) {
+    double product = num1 * num2;
+    return product;
+  }
 
-int Factorial(int num){
-    if(num <= 1) return num;
-    return num * Factorial(num - 1);
-}
+  double Division(double num1, double num2) {
+    double quotient = num1 / num2;
+    return quotient;
+  }
 
- //Power function using cmath
-double Power(double base, double exponent){
-    return pow(base, exponent);
+  int Factorial(int num){
+      if(num <= 1) return num;
+      return num * Factorial(num - 1);
+  }
+
+  //Power function using cmath
+  double Power(double base, double exponent){
+      return pow(base, exponent);
+  }
+
 }
 

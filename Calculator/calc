@@ -1,0 +1,8 @@
+#!/bin/bash
+if ! command -v flutter &> /dev/null
+then
+    echo "Error: Flutter SDK not found. Please install Flutter to run this GUI."
+    exit 1
+fi
+cd flutter_gui
+flutter run -d macos
