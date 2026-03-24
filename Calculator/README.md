@@ -7,11 +7,9 @@ A professional, cross-platform calculator application that combines a high-perfo
 - **`calculations/`**: Contains the C++ source code.
   - `arithmetics.cpp`: Core mathematical implementations with C-linkage.
   - `calc.h`: Header file for the arithmetic functions.
-- **`flutter_gui/`**: Contains the Flutter project.
   - `lib/main.dart`: Main application UI and logic.
   - `lib/cpp_bridge.dart`: Dart-FFI bridge to the C++ backend.
 - **`Makefile`**: Automates the build process.
-- **`calc`**: A simple shell command to launch the app.
 
 ## Prerequisites
 
