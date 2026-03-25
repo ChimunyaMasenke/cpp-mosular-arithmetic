@@ -11,7 +11,7 @@ class CalculatorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Calculator',
+      title: 'Calculator',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         useMaterial3: true,
@@ -140,7 +140,7 @@ class _CalculatorHomeState extends State<CalculatorHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('C++ Powered Calculator')),
+      appBar: AppBar(title: const Text('Calculator')),
       body: Column(
         children: [
           Expanded(

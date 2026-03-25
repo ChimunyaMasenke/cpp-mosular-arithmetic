@@ -7,7 +7,7 @@
       "request": "launch",
       "args": [],
       "cwd": "/Users/nchimunyamasenke/Projects/Calculator/cpp-mosular-arithmetic/Calculator",
-      "program": "/Users/nchimunyamasenke/Projects/Calculator/cpp-mosular-arithmetic/Calculator/build/Debug/outDebug"
+      "program": "/Users/nchimunyamasenke/Projects/Calculator/cpp-mosular-arithmetic/Calculator/build/Release/outRelease"
     }
   ]
 }

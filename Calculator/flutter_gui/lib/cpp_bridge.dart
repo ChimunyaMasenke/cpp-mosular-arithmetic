@@ -65,7 +65,15 @@ class CppBridge {
   String _getLibraryPath() {
     final String currentDir = Directory.current.path;
     if (Platform.isMacOS) {
+      // First try the absolute path for local development
+      const String devPath = '/Users/nchimunyamasenke/Projects/Calculator/cpp-mosular-arithmetic/Calculator/flutter_gui/libarith.dylib';
+      if (File(devPath).existsSync()) {
+        return devPath;
+      }
+      // Fallback to app bundle or current dir
       return p.join(currentDir, 'libarith.dylib');
+    } else if (Platform.isAndroid) {
+      return 'libarith.so';
     } else if (Platform.isWindows) {
       return p.join(currentDir, 'libarith.dll');
     } else {

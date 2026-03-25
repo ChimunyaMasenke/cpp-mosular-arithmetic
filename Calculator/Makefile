@@ -10,7 +10,7 @@ LIB_NAME = flutter_gui/libarith.dylib
 CLI_NAME = calculations/calc
 FLUTTER = flutter
 
-.PHONY: all lib cli clean run
+.PHONY: all lib cli clean run apk
 
 all: lib cli
 
@@ -28,5 +28,9 @@ run: lib
 	@echo "Note: Flutter SDK required to run"
 	cd flutter_gui && $(FLUTTER) run -d macos
 
+apk:
+	cd flutter_gui && $(FLUTTER) clean && $(FLUTTER) build apk
+
 clean:
 	rm -f $(LIB_NAME) $(CLI_NAME)
+	cd flutter_gui && $(FLUTTER) clean
